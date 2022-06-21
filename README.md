@@ -11,7 +11,7 @@ Particularly for valdidating an email address I used regular expressions functio
 
 In **_static/uploads_** folder I decided to store the image of the bills uploaded by the users.
 
-##**cwk.py** file contains all of the backend code of the website. 
+## **cwk.py** file contains all of the backend code of the website. 
 function _topUp()_ is called when the post request is made using ajax from _bills.js_ file to top-up the balance of the user.
 function _display()_ is called when the post request is made using ajax from _bills.js_ file to display the uploaded image of
 the correspoding bill.
