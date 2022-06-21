@@ -1,6 +1,6 @@
-#BillShare web application
+# BillShare web application
 
-##HTML files in _templates_ folder
+## HTML files in _templates_ folder
 index.html, badlogin.html, index.html, register.html, welcome.html and wrongemail.html 
 files (pages) are only used for loging in to the account.
 register.html is for registering.
