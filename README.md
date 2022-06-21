@@ -4,7 +4,7 @@
 index.html, badlogin.html, index.html, register.html, welcome.html and wrongemail.html 
 files (pages) are only used for loging in to the account.
 register.html is for registering.
-index.html and register.html have their own corresponding javascript files in **_ static folder_**: 
+index.html and register.html have their own corresponding javascript files in **_static folder_**: 
 index.js and registration.js.
 Both of the javascript files contains code for input validation. 
 Particularly for valdidating an email address I used regular expressions function.
