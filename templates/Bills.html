@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bills</title>
+        <link rel="stylesheet" href="/static/styles.css">
+        <script src='static/jquery-3.6.0.js'></script>
+        <script src='static/bills.js'></script>
+    </head>
+    <body>
+        <div class="biggestscreen">
+        <div class="heading">
+            <a href="/about"><img src="/static/BillShare-logos.jpeg" alt="LOGO" width = "80px" height = "80px" style="border-radius: 25px;"></a>
+            <h3>Hello, {{ name }}</h3>
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% set printed_messages = dict() %}
+                    {% for category, message in messages %}
+                        {% if message not in printed_messages %}
+                           <p style="color: rgb(242, 238, 227);">{{message}}</p>
+                           {% set x = printed_messages.__setitem__(message, "value")  %}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>    
+        <div class="fullscreen1">
+        {% for k, v in value.items() %}
+            <div class="bills" name='{{ v[3] }}'>
+                <h2>Fee for {{ k }} is {{ v[0] }}£</h2>
+                <div class = "smaller">
+                <p>Added by {{ v[2] }}</p>
+                {% if v[4] %}
+                    <p class = "status" id='{{ v[3] }}'>Status: Completed</p>
+                {%  else %}
+                    <p class = "status" id='{{ v[3] }}'>Status: Pending</p>
+                {% endif %}
+                <p>Due by {{ v[1] }}</p>
+                <button type="button" name="payButton" style="width: 100px" id='{{ v[3] }}'>Pay</button>
+                <form action="/display" method="post">
+                    <input type="hidden" name='bill' value='{{ v[3] }}'>
+                    <button type="submit" name="ImageButton" style="width: 120px">Display Image</button>    
+                </form>
+                <button type="button" name="removeButton" style="width: 100px" id='{{ v[3] }}'>Remove</button>
+            </div>
+            </div>
+        {% endfor %}
+        <div class="add">
+            <button type="button" id="addBill" style="height: 100px;">Add New Bill</button>
+        </div>
+        <div class="bills1">
+            <h3 id="balance">Your balance: {{ balance }}£</h3>
+            <button type="button" id="topUp" style="width: 100px; height: 30px">Top Up</button>
+        </div>
+    </div>
+        </div>
+    </body>
+</html>

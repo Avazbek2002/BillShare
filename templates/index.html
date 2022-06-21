@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome to BillShare</title>
+        <link rel="stylesheet" href="/static/styles.css">
+        <script src='static/jquery-3.6.0.js'></script>
+        <script src='static/index.js'></script>
+    </head>
+    <body>
+        <div class="fullscreen">
+           <div class="biggerpicture">
+            <a href="/about"><img src="/static/BillShare-logos.jpeg" alt="LOGO" width = "270" height = "270" style="border-radius: 25px"></a>
+           <div class="smallerPicture" style="border-radius: 25px">
+              <h1>Welcome</h1>
+              <h3>If you are aiming to get your bills shared fairly, then you are in the right place</h3>
+              <p>LOGIN</p>
+              <div id="errors">
+                <h2 style="color: red"></h2>
+              </div>
+              <form class="login" id="form" action="/" method = "post">
+                 <label><input name = "email" placeholder= "Email"></label>
+                 <p></p>
+                 <label><input name = "household" placeholder= "Household name"></label>
+                 <p></p>
+                 <label><input type = 'password' name = 'user_password' placeholder = "Password"></label>
+                 <p></p>
+                 <input type = 'submit' value = 'Submit!'>
+                 <p></p>
+                 <p>Don't have an account. <a href="/register">Register</a></p>
+               </form>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

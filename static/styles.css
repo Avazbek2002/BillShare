@@ -1,0 +1,117 @@
+.smallerPicture {
+    width: 600px;
+    height: 400px;
+    background-color: rgb(242, 238, 227);
+    text-align: center;
+}
+
+.smallerPicture1 {
+    border-radius: 25px;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(242, 238, 227);
+}
+
+body {
+    padding: 25px;
+    background-color: rgb(80, 101, 168);
+    height: 1500px;
+}
+
+.biggestscreen {
+    display: grid;
+    grid-template-rows: 100px 1400px;
+    background-color: rgb(80, 101, 168);
+    padding: 15px;
+    height: 1500px;
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: 100px 200px auto;
+}
+
+.biggerpicture {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered {
+    text-align: center;
+    background-color: rgb(242, 238, 227);
+    position: fixed;
+    height: 100px;
+    width: 270px;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -135px;
+}
+
+.bills {
+    display: grid;
+    grid-template-rows: 40px 60px;
+    border-radius: 25px;
+    background-color: rgb(242, 238, 227);
+    padding: 15px;
+    height: 100px;
+    width: 400px;
+}
+
+.bills1 {
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 200px 200px;
+    border-radius: 25px;
+    background-color: rgb(242, 238, 227);
+    padding: 15px;
+    height: 100px;
+    width: 400px;
+}
+
+.smaller {
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: 35px 20px;
+    grid-gap: 5px;
+    height: 10px;
+    width: 120px;
+}
+
+.fullscreen1 {
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    grid-template-rows: repeat(10, 140px);
+}
+
+.forms {
+    display: grid;
+    grid-template-rows: 40px 60px 20px;
+
+}
+
+.add {
+    display: grid;
+    grid-template-rows: 40px 60px 20px;
+    border-radius: 15px;
+    background-color: rgb(242, 238, 227);
+    padding: 15px;
+    height: 100px;
+    width: 400px;
+}
+
+.forms {
+    display: grid;
+    grid-template-columns: 170px 170px;
+    grid-template-rows: 20px 20px;
+}
+
+@media screen and (max-width:600px) {
+    .smallerPicture .smallerPicture1 {
+        width: 450px;
+        height: 300px;
+    }
+}
