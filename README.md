@@ -3,6 +3,11 @@
 ## Login page
 <img width="916" alt="image" src="https://github.com/Avazbek2002/BillShare/assets/64166521/d2a6b40c-3a02-4d07-bb15-68489797f959">
 
+## Sign-up page
+<img width="916" alt="image" src="https://github.com/Avazbek2002/BillShare/assets/64166521/824f853b-2e99-4058-b9c8-7e667454c83b">
+
+## Page for adding and removing household bills
+<img width="1401" alt="image" src="https://github.com/Avazbek2002/BillShare/assets/64166521/401f4dfa-95dc-458b-9ca9-ff21acbe36d4">
 
 ## HTML files in _templates_ folder
 index.html, badlogin.html, index.html, register.html, welcome.html and wrongemail.html 
