@@ -1,5 +1,9 @@
 # BillShare web application
 
+## Login page
+<img width="916" alt="image" src="https://github.com/Avazbek2002/BillShare/assets/64166521/d2a6b40c-3a02-4d07-bb15-68489797f959">
+
+
 ## HTML files in _templates_ folder
 index.html, badlogin.html, index.html, register.html, welcome.html and wrongemail.html 
 files (pages) are only used for loging in to the account.
